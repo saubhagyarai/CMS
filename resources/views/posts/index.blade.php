@@ -24,7 +24,7 @@
       <tbody>
         @foreach($posts as $post)
         <tr>
-          <td><img src="{{asset('/storage/'.$post->image)}}" width="120px" height="60px" alt=""></td>
+          <td><img src="{{asset('storage/'.$post->image)}}" width="120px" height="60px" alt=""></td>
           <td>{{$post->title}}</td>
           <td>
             <a href="{{ route('categories.edit', $post->category->id)}}">
